@@ -2,6 +2,7 @@ package br.com.projeto.curso.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,11 +11,11 @@ import javax.persistence.Table;
 public class Curso {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String codigo;
 	private String nome;
-	
+
 	
 	public Long getId() {
 		return id;

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron mb-0">
+                <h1 class="display-4">Novo Aluno</h1>
+            </div>
+
+            <form action="/aluno/cadastro" method="POST">
+                <div>
+                    <label for="nome">Aluno</label>
+                    <input name="nome" placeholder="nome do aluno"/>
+                    <small>Informa qual o nome do Aluno.</small>
+                </div>
+                <div>
+                    <label for="sexo">Sexo</label>
+                    <input name="sexo" placeholder="sexo do aluno"/>
+                    <small>Informe qual o sexo do aluno.</small>
+                </div>
+                <div>
+                    <label for="matricula">Matricula</label>
+                    <input name="matricula" placeholder="matricula do aluno"/>
+                    <small>Informa a matricula do aluno.</small>
+                </div>
+                <div>
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input name="dataNascimento" placeholder="Data de nascimento"/>
+                    <small>Informa a Data de Nascimento do aluno.</small>
+                </div>
+                <div>
+                    <label for="frequencia">Frequência</label>
+                    <input name="frequencia" placeholder="Frequência"/>
+                    <small>Informa a Frequência do aluno.</small>
+                </div>
+                <div>
+                    <label for="nota">Nota do Aluno</label>
+                    <input name="nota" placeholder="Nota do Aluno"/>
+                    <small>Informa a nota do aluno.</small>
+                </div>
+                
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </body>
+</html>

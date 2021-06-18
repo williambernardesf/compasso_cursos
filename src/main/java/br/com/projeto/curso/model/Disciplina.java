@@ -7,15 +7,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "turmas")
-public class Turma {
-	
+@Table(name = "disciplinas")
+public class Disciplina {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	private String codigo;
-
+	private String nome;
 	
 	public Long getId() {
 		return id;
@@ -29,6 +29,11 @@ public class Turma {
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 	
-
 }

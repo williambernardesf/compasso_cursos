@@ -8,6 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name = "alunos")
 public class Aluno {
@@ -21,6 +22,8 @@ public class Aluno {
 	private String sexo;
 	private String matricula;
 	private Date dataNascimento;
+	private double nota;
+	private double frequencia;
 	
 	public Long getId() {
 		return id;
@@ -52,5 +55,16 @@ public class Aluno {
 	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
-	
+	public double getNota() {
+		return nota;
+	}
+	public void setNota(double nota) {
+		this.nota = nota;
+	}
+	public double getFrequencia() {
+		return frequencia;
+	}
+	public void setFrequencia(double frequencia) {
+		this.frequencia = frequencia;
+	}
 }
